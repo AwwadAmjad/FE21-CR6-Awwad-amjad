@@ -1,0 +1,22 @@
+
+<div class=" row col-6 col-m-4 col-sm-12 container ">
+  <h1 class="mt-4 py-5 text-dark "> Phone List</h1>
+<div *ngIf="phone" >
+
+    <div class="card">
+      <div class="card-header">
+       <h3> [ {{phone.name}} ]</h3>
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p> <span>Description:</span> {{phone.description}}</p>
+          <a class="btn btn-info m-3 " routerLink="/">Back to Home</a></blockquote>
+      </div>
+    </div>
+
+
+</div>
+
+</div>
+
+

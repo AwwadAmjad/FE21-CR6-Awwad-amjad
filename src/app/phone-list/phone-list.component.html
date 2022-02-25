@@ -1,0 +1,21 @@
+<h2 class=" text ">Phones list</h2>
+<div class=" row container ">
+<div class=" card-body col-lg-4 col-md-6 col-sm-12 " *ngFor="let phone of phones; index as i">
+       <div >
+        <img src="{{phone.Image}}"  class="img-item"/>
+      </div>
+    <div class="item-menu">
+      <div class="item-detail">
+          <h3>Brand :{{phone.Brand}} </h3>
+          <h5 >Model: {{ phone.name }}</h5>
+          <h6 >Price:{{phone.price}} €</h6>
+      </div>
+    </div>
+       <button class="btn btn-info m-2 " routerLink="phones/{{i}}">More </button>
+       <button href="#" class="btn btn-info" (click)="addToCart(phone)" >Add to Cart</button>
+ </div>
+</div>
+
+
+
+

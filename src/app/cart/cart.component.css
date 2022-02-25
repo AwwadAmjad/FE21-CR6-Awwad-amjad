@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+h3{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px ;
+  font-family: 'Times New Roman', Times, serif;
+}
+.container{
+  margin: 0 auto;
+  background-color: #eee;
+  margin: 10px;
+  padding: 10px;
+}
+form{
+  display: flex;
+  justify-content:end;
+  flex-wrap: wrap;
+
+}
+input{
+    margin-left: 10px;
+    padding-top: 0.4rem;
+    text-align: center;
+    box-shadow:  5px 5px 5px 5px   rgb(182, 174, 174);
+    border-radius: 10%  ;
+    border: 2px solid rgb(129, 129, 129);
+
+
+}
+span{
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+ border: 1px solid #3111;
+  width: 14%;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+
+}
+
+.cart-item{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+
+}
+h4{
+  margin-top: 2rem;
+  background-color: hsl(179deg 9% 64%);
+  font-size: 30px;
+  padding: 1rem;
+  font-family: monospace;
+  font-weight: 600;
+  text-align: center;
+}

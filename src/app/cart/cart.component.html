@@ -1,0 +1,25 @@
+<form [formGroup]="checkoutForm" (ngSubmit)="submit(this.checkoutForm.value)">
+  <input type="text" formControlName="name" placeholder="Type your name">
+ <input type="text" formControlAddess="address" placeholder="Type your address">
+<input type="submit" value="submit" class="btn btn-success mt-2">
+</form>
+ <h3> Cart</h3 >
+<div class="row container">
+
+
+<div *ngFor="let item of cart" class="cart-item">
+<span>The Phone : {{item.Brand}}</span>
+<span>Model : {{ item.name }} </span>
+   <span>Price : {{ item.price }} €</span><hr>
+     <span>Totel ink(MwSt.) : {{ item.price }} €  </span>
+   </div>
+   </div>
+<div>
+  <h4>Thank you for visiting our Store</h4>
+  <a class="btn btn-success mt-1 p-1 m-1   " >Pay </a>
+   <a class="btn btn-info mt-1 p-1 m-1" href="/">Back to Home</a>
+</div>
+
+
+
+
